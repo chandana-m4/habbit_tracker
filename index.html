@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Habit Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <h1>💜 Smart Habit Tracker</h1>
+            <p>Build better habits, one day at a time 🌸</p>
+
+            <div class="date" id="todayDate"></div>
+        </header>
+
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="card">
+                <h3>Total Habits</h3>
+                <span id="totalHabits">0</span>
+            </div>
+
+            <div class="card">
+                <h3>Completed</h3>
+                <span id="completedHabits">0</span>
+            </div>
+
+            <div class="card">
+                <h3>🔥 Streak</h3>
+                <span id="streak">0</span>
+            </div>
+
+        </section>
+
+
+        <!-- Progress -->
+        <section class="progress-box">
+
+            <div class="progress-title">
+                <span>Today's Progress</span>
+                <span id="progressText">0%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progressFill"></div>
+            </div>
+
+        </section>
+
+
+        <!-- Add Habit -->
+        <section class="add-box">
+
+            <input
+                type="text"
+                id="habitInput"
+                placeholder="Enter your habit..."
+            >
+
+            <input
+                type="time"
+                id="reminderInput"
+                value="18:00"
+            >
+
+            <button onclick="addHabit()">
+                ➕ Add Habit
+            </button>
+
+        </section>
+
+
+        <!-- Habit List -->
+        <section>
+
+            <h2>📋 Today's Habits</h2>
+
+            <div id="habitList"></div>
+
+        </section>
+
+
+        <!-- Weekly View -->
+        <section class="weekly">
+
+            <h2>📅 Weekly Summary</h2>
+
+            <div id="weeklyList"></div>
+
+        </section>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
